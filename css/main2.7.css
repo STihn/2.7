@@ -1,0 +1,114 @@
+p{
+    background-color: blueviolet;
+}
+h1{
+    font-size: 10px;
+}
+.description{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    margin: 15px;
+    display: inline-block;
+}
+.main__text{
+    background-color: red;
+}
+.text{
+    color: aqua;
+}
+.title{
+    font-size: 20px;
+}
+.fix{
+    font-weight: bold;
+}
+#title{
+    color: #443377;
+}
+#one{
+    background-color: rgb(0, 255, 64);
+}
+#two{
+    background-color: blue;
+}
+li{
+    background-color: blue;
+}
+li a{
+    color: bisque;
+}
+.inner > p{
+    font-size: 38px;
+}
+.big{
+    background-color: azure;
+}
+b + i {
+    color: red;
+}
+h5 ~ a{
+    color: yellow;
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+h2,h3{
+    text-transform: lowercase;
+}
+input[type="text"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+    }
+input[type="button"] {
+    background-color: cyan;
+    width: 200px;
+    }
+div[ class="boo"]{
+    width: 300px;
+    height: 150px;
+    background-color: rgba(90, 11, 90, 0.4);
+}
+.boo{
+     background-color: aqua; /* пробовал перебьет ли верхний див*/
+}
+*{ /*  step 15 */
+    padding: 0px;
+    margin:10px;
+}
+.voodoo{
+    width: 150px;
+    height: 120px;
+    background-color: #6c6c6c;
+}
+.voodoo__btn{
+    background-color: #dfdf0d;
+    color:red;
+    width: 70px;
+    height: 20px;
+    border-radius: 5px;
+}
+.voodoo__btn:hover{
+    background-color: #ffee00;
+    width: 75px;
+}
+.doo ul li{
+    background-color: #dfdf0d;
+}
+.doo ul li:last-child{
+    background-color: rgb(1, 252, 252);
+}
+.doo ul li:last-of-type:after {
+    content: " ◄"; 
+    color: green; 
+}
+.doo ul li:hover:after { /* step21*/
+    content: " ◄"; 
+    color: #c00000;
+}
+.container h1,h2:not(h3) {
+    background-color: goldenrod;
+}
