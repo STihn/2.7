@@ -1,0 +1,50 @@
+/* убрать коменты для просмотра шагов с 1 по 3 
+body{
+    font-size: 9px;
+    border: 1px solid red;
+} */ 
+i{
+    border:inherit;
+}
+h1{
+    border: inherit;
+}
+h2{
+    font-size: initial;
+}
+h1{
+    border:unset;
+}
+p{
+    font-size: 45px;
+    background-color: gold;
+}
+.content{
+    background-color:red;
+    font-size: 15px;
+}
+.text{
+    background-color: blue;
+    font-size: 20px;
+}
+/* Если поставить класс content после класса text сработают свойства класса content */
+#pagewrapper{
+background-color: brown;
+font-size: 30px;
+}
+#main{
+    background-color: aqua;
+}
+#inner{
+    background-color: bisque;
+}
+#pagewrapper > .content{
+    background-color: olivedrab;
+}
+
+#pagewrapper .content{
+    background-color: orange;
+}
+p:not(.text){
+   background-color: tomato;
+}
