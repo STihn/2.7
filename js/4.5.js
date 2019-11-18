@@ -3,7 +3,9 @@
 
 let task1 = [
     'book',
-    '1245',
+    1245,
+    32,
+    345,
     true,
 ]
 console.log(task1)
@@ -15,9 +17,9 @@ var a3 = {  3 : 'hello', 'one' : 'hi', 'testt' : 'vodoley', 'ivan' : 'ivanov'}
 //длина объекта
 console.log('Длина объекта а3:'+ Object.keys(a3).length)
 
-for (var key in a3){
-    if (key.length >= 4){
-        document.write( key + ' ')
+for (var key of Object.keys(a3)){
+    if (String(key).length > 4){
+        console.log( a3[key] )
     }
 }
 
@@ -36,7 +38,9 @@ btn.onclick = function () {
         a7ToString += item + ': ' + a7[item] + '<br>'
     }
 
-    document.getElementById('result').innerHTML = a7ToString  
+    document.getElementById('result').innerHTML = a7ToString
+    document.getElementById('u7-key__input').value = ''
+    document.getElementById('u7-value__input').value = ''  
 }
 
  
@@ -53,19 +57,21 @@ let a1 = []
 let a2 = []
 
 for(i of d){
-    if(i >= 0){
-        a1 += i + ', '; 
+    if(i % 2 == 0){
+        a1 += i + ' ';
+       
     }     
-    else if (i < 0){
-        a2 += i + ', ' ;
+    else {
+        a2 += i + ' '; 
+        
     }
 }
 
 const element_a1 = document.getElementById('task 5 positive')
-element_a1.innerHTML = 'Положительные числа: '+ a1
+element_a1.innerHTML = 'Четные числа: '+ a1 
 
 const element_a2 = document.getElementById('task 5 negative')
-element_a2.innerHTML = 'Отрицательные числа: '+ a2
+element_a2.innerHTML = 'Нечетные числа: '+ a2
 
 
 //TASK 6
