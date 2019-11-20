@@ -27,13 +27,14 @@ function Foo() {
     else if (!parseInt(y)) {
         alert('Вы ввели не число');
     }
+
     if (x > y) {
         alert( x );
     }
-    if (x == y){
+    else if (x === y){
         alert( x );
     }
-    if (x < y) {
+    else if (x < y) {
         alert( y );
     }
 }
@@ -49,6 +50,7 @@ function someFoo() {
     else if (!parseInt(y)) {
         alert('Вы ввели не число');
     }
+
     if (x > y) {
         alert( x );
     }
@@ -59,6 +61,7 @@ function someFoo() {
         alert( y );
     }
 }
+
 
 // TASK 4
 
