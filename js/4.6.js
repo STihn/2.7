@@ -62,7 +62,7 @@ function someFoo() {
 
 // TASK 4
 
-function someFoo (min, max) {
+function randFoo (min, max) {
 
    return Math.floor(Math.random() * (max - min) + min);
 
