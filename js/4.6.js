@@ -52,10 +52,10 @@ function someFoo() {
     if (x > y) {
         alert( x );
     }
-    if (Math.abs(x) == Math.abs(y)){
+    else if (Math.abs(x) === Math.abs(y)){
         alert( x );
     }
-    if (x < y) {
+    else if (x < y) {
         alert( y );
     }
 }
@@ -67,4 +67,4 @@ function randFoo (min, max) {
    return Math.floor(Math.random() * (max - min) + min);
 
 }
-console.log(someFoo (1, 100));
+console.log(randFoo (1, 100));
