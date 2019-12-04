@@ -7,9 +7,10 @@ console.log('Index: ' + i + ', element: ' + arr[i]);
 
 
 const arr = [10, 12, 15, 21];
- 
-setTimeout(function() {
-    for (var i = 0; i < arr.length; i++){
-console.log('Index: ' + i + ', element: ' + arr[i]);
+for (var i = 0; i < arr.length; i++) {
+  setTimeout(function(i) {
+    return function() {
+      console.log('Index: ' + i + ', element: ' + arr[i]);
     }
-}, 3000);
+  }(i), 3000);
+}
